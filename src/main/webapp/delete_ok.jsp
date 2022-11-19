@@ -5,14 +5,14 @@
 <%@ page import="com.myapp.file.FileUpload"%>
 <%@ page import="java.io.File" %>
 <%
-    String sequence = request.getParameter("seq");
-    if (sequence != "") {
-        int seq = Integer.parseInt(sequence);
+    String sid = request.getParameter("id");
+    if (sid != "") {
+        int id = Integer.parseInt(sid);
         MemberVO u = new MemberVO();
         MemberDAO memberDAO = new MemberDAO();
-        String filename = memberDAO.getPhotoFilename(seq);
+        String filename = memberDAO.getPhotoFilename(id);
         if (filename != null) FileUpload.deleteFile(request, filename);
-        u.setSeq(seq);
+        u.setSeq(id);
         memberDAO.deleteMember(u);
     }
     response.sendRedirect("list.jsp");

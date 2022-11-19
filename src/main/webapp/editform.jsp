@@ -12,12 +12,12 @@
 
 <%
     MemberDAO memberDAO = new MemberDAO();
-    String sequence=request.getParameter("seq");
-    MemberVO u = memberDAO.getOne(Integer.parseInt(sequence));
+    String id = request.getParameter("id");
+    MemberVO u = memberDAO.getOne(Integer.parseInt(id));
 %>
 
 <h1>Edit Form</h1>
-<form action="edit_ok.jsp" method="post">
+<form action="edit_ok.jsp" method="post" enctype="multipart/form-data">
     <input type="hidden" name="seq" value="<%=u.getSeq() %>"/>
     <table>
         <tr><td>Category:</td><td><input type="text" name="category" value="<%= u.getCategory()%>"/></td></tr>

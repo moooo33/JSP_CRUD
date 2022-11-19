@@ -31,9 +31,9 @@
         }
     </style>
     <script>
-        function delete_ok(seq){
+        function delete_ok(id){
             var a = confirm("정말로 삭제하겠습니까?");
-            if(a) location.href='delete_ok.jsp?seq=' + seq;
+            if(a) location.href='delete_ok.jsp?id=' + id;
         }
     </script>
 </head>
@@ -60,12 +60,12 @@
         <tr>
             <td>${u.getSeq()}</td>
             <td>${u.getCategory()}</td>
-            <td>${u.getTitle()}</td>
+            <td><a href="view.jsp?id=${u.getSeq()}">${u.getTitle()}</a></td>
             <td>${u.getWriter()}</td>
             <td>${u.getContent()}</td>
             <td>${u.getPhoto()}</td>
             <td>${u.getRegdate()}</td>
-            <td><a href="editform.jsp?seq=${u.getSeq()}">Edit</a></td>
+            <td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
             <td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
         </tr>
     </c:forEach>
