@@ -3,6 +3,7 @@
 <%@ page import="com.myapp.dao.MemberDAO, java.util.*"%>
 <%@ page import="com.myapp.member.MemberVO"%>
 <%@ page import="com.myapp.file.FileUpload"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -46,6 +47,7 @@
 %>
 <table id="list" width="90%">
     <tr>
+        <th>No.</th>
         <th>Id</th>
         <th>Category</th>
         <th>Title</th>
@@ -56,8 +58,9 @@
         <th>Edit</th>
         <th>Delete</th>
     </tr>
-    <c:forEach items="${list}" var="u">
+    <c:forEach items="${list}" var="u" varStatus="status">
         <tr>
+            <td>${fn:length(list)-status.index}</td>
             <td>${u.getSeq()}</td>
             <td>${u.getCategory()}</td>
             <td><a href="view.jsp?id=${u.getSeq()}">${u.getTitle()}</a></td>

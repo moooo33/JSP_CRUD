@@ -63,7 +63,6 @@ public class MemberDAO {
             stmt.setString(5, vo.getPhoto());
             stmt.setInt(6, vo.getSeq());
 
-
             System.out.println(vo.getCategory() + "-" + vo.getTitle() + "-" + vo.getWriter() + "-" + vo.getContent() + "-" + vo.getPhoto() + "-" + vo.getSeq());
             stmt.executeUpdate();
             return 1;

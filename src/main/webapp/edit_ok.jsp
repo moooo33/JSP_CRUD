@@ -8,11 +8,15 @@
 <%
     request.setCharacterEncoding("utf-8");
     MemberDAO memberDAO = new MemberDAO();
-    FileUpload upload = new FileUpload();
-    String cont = request.getParameter("content");
-    out.println(cont);
-    MemberVO u = upload.uploadPhoto(request);
+    FileUpload up = new FileUpload();
+    MemberVO vo = up.uploadPhoto(request);
 
-    int i = memberDAO.updateMember(u);
-    response.sendRedirect("list.jsp");
+    int i = memberDAO.updateMember(vo);
+    String msg = "데이터 수정 성공!";
+    if(i==0) msg = "[에러] 데이터 수정 실패!";
 %>
+
+<script>
+    alert('<%=msg%>');
+    location.href='list.jsp';
+</script>
