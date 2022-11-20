@@ -9,17 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9739101-9566-4628-849c-52840d259852" name="Changes" comment="update complete (suddenly?? why???)&#10;view ongoing">
+    <list default="true" id="d9739101-9566-4628-849c-52840d259852" name="Changes" comment="view comple&#10;file upload complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myapp/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myapp/file/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myapp/file/FileUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fileupload.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +122,8 @@
       <updated>1668734880605</updated>
       <workItem from="1668734881909" duration="5113000" />
       <workItem from="1668865715747" duration="20054000" />
-      <workItem from="1668889205574" duration="7564000" />
+      <workItem from="1668889205574" duration="8210000" />
+      <workItem from="1668936925121" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1668877120170</created>
@@ -146,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668880232143</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="view comple&#10;file upload complete">
+      <created>1668936000738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668936000738</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="update complete (suddenly?? why???)&#10;view ongoing" />
-    <option name="LAST_COMMIT_MESSAGE" value="update complete (suddenly?? why???)&#10;view ongoing" />
+    <MESSAGE value="view comple&#10;file upload complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="view comple&#10;file upload complete" />
   </component>
 </project>
